@@ -1,0 +1,656 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,input,textarea,select{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: #9fa496;
+    font-family: 华文新魏，sans-serif;
+    /*在电脑中没有合适字体的时候时自动选择相似字体*/
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    color: #f8f8f8;
+    text-decoration: none;
+    /*去掉a标签中字体默认样式*/
+}
+.header{
+    width: 1350px;
+    height: 60px;
+    background: #1c2723;
+}
+.headerbox{
+    width: 80%;
+    height: 100%;
+    /*background: #99cc99;*/
+    margin: auto;
+    line-height: 60px;
+}
+.headerbox h3{
+    /*width: 160px;*/
+    height: 100%;
+    float: left;
+    /*background: #ffe85f;*/
+    font-size: 16px;
+    margin-right: 6.25%;
+    font-weight: bold; /*粗体*/
+    text-align: center; /*居中*/
+}
+.headerbox .nav{
+    /*width: 600px;*/
+    /*去掉宽度，自适应*/
+    height: 100%;
+    float: left;
+    /*background: #f8f8f8;*/
+}
+.nav li{
+    /*导航栏中的8个标签*/
+    float: left;
+    margin-right:36px;
+}
+.nav li a:hover{
+    color: #f3a6ff;
+    /*导航栏里的选项当鼠标放上去会变色*/
+}
+.headerbox .search{
+    width: 50px;
+    height: 100%;
+    float: right;
+    /*background: #dca24f;*/
+}
+.main{
+    height: auto;
+    min-height: 1800px;
+    /*background: #fdfff8;*/
+    width: 1080px;
+    margin: 20px auto;
+
+}
+.main .mainleft{
+    width: 810px;
+    height: auto;
+    min-height: 600px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 10px;
+    /*background: #fdfff8;*/
+}
+.mainleft .recmd{
+    height: auto;
+    min-height: 400px;
+    padding: 15px;
+    background: #fdfff8;
+    border-radius: 5px;
+}
+.mainleft .recmd .title {
+    height: 21px;
+    line-height: 21px;
+    border-bottom: 1px solid #100b10;
+    color: #666666;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    background: #333333;
+}
+.recmd .title .your {
+    float: right;
+    height: 21px;
+    width: 285px;
+    display: flex;
+    color: #666666;
+    font-size: 14px;
+}
+.recmd .your >li{
+    float: left;
+    margin-right: 15px;
+    color: #666666;
+}
+.recmd .your >li a{
+    color: #666666;
+}
+.recmd .heading{
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    margin-top: 10px;
+    font-weight: bolder;
+    color: #333;
+}
+.recmd .avator{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.avator .pic{
+    width: 36px;
+    height: 36px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 16px;
+}
+.avator .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #55eeff;
+}
+.avator .date{
+    width: auto;
+    height: 100%;
+    min-width: 100px;
+    line-height: 60px;
+    color: #999;
+}
+.mainleft .intro{
+    width: 100%;
+    height:52px;
+    background: #F6F6F6;
+    color: #333333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.mainleft .text{
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-top: 15px;
+}
+.text .pic1{
+    width: 590px;
+    height: 630px;
+    margin:20px auto;
+    display: block;
+}
+.text .pic2{
+    width: 580px;
+    height: 400px;
+    margin:20px auto;
+    display: block;
+}
+.text .pic3{
+    width: 584px;
+    height: 300px;
+    margin:20px auto;
+    display: block;
+}
+.text strong{
+    color: #55eeff;
+}
+.mainleft .zhuanzai{
+    width: 100%;
+    height: 72px;
+    background: #F6F6F6;
+    border-left: 2px solid #333333;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.mainleft .verygood{
+    width: 168px;
+    height: 40px;
+    background: #e2523a;
+    margin: 24px auto;
+    border-radius: 5px;
+}
+.mainleft .verygood p{
+    line-height: 40px;
+    color: #fdfff8;
+    text-align: center;
+    display: block;
+}
+.mainleft .updown{
+    width: 100%;
+    height: auto;
+
+}
+.mainleft .updown a{
+   display: inline-block;
+}
+.mainleft .similar{
+    width: 100%;
+    height: 158px;
+    background: #fdfff8;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.mainleft .similar .title {
+    height: 21px;
+    line-height: 21px;
+    border-bottom: 1px solid #100b10;
+    color: #666666;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    background: #333333;
+}
+.similar .kuai{
+    width: 770px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+    font-size: 15px;
+}
+.similar .similarleft{
+    width:385px ;
+    height: 74px;
+}
+.similar .kuai li{
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+.similar .kuai li::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: #100b10;
+    border-radius: 50%;
+    position: absolute;
+    top:8px;
+    left: -10px;
+    overflow: hidden;
+}
+.similar .similarright{
+    width: 385px;
+    height: 74px;
+}
+.mainleft .random{
+    width: 100%;
+    height: 320px;
+    background: #fdfff8;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.mainleft .random .title {
+    height: 21px;
+    line-height: 21px;
+    border-bottom: 1px solid #100b10;
+    color: #666666;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    background: #333333;
+}
+.randomlist li{
+    float: left;
+    width: 195px;
+    height: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.randomlist .randomthumb{
+    display: block;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.randomlist >li >h2{
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+.randomlist >li >p{
+    font-size: 14px;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 63px;
+    line-height:1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+}
+
+.main .mainright{
+    width: 260px;
+    height: auto;
+    min-height:800px;
+    float: right;
+    border-radius: 5px;
+}
+.main .mainrightfirst{
+    width: 100%;
+    height: 350px;
+    background: #fdfff8;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.mainright .title {
+    height: 21px;
+    line-height: 21px;
+    border-bottom: 1px solid #100b10;
+    color: #666666;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    background: #333333;
+}
+.mainrightlist{
+    width: 220px;
+    /*height:350px;*/
+    background: #fdfff8;
+    margin-top: 15px;
+}
+.mainrightlist .pictext {
+    width: 220px;
+    height: 130px;
+    background: #ffcf53;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+.mainrightlist li img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+.mainrightlist li p{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.mainright .textlist li{
+    height: 36px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 0px 0px 0px 25px;
+}
+.mainrightlist .pictext li a:hover img{
+    transform: scale(1.2,1.2);
+}
+.mainrightlist .pictext li a img{
+    transition: transform .2s ease-in;
+}
+.mainright .textlist li::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display:block;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    color: #333333;
+    background: #ffcf53;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.mainright .textlist >li:first-child::before{
+    content: '1';
+    background: #ffcf53;
+}
+.mainright .textlist >li:nth-child(2)::before{
+    content: '2';
+    background: #ffcf53;
+}
+.mainright .textlist >li:nth-child(3)::before{
+    content: '3';
+    background: #ffcf53;
+}
+.mainrightsecond{
+    width: 220px;
+    min-height:200px;
+    height: auto;
+    background: #fdfff8;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.mainrightsecond .picture{
+    width: 220px;
+    height: 130px;
+    background: #ffcf53;
+    position: relative;
+    margin:20px 0;
+}
+.mainrightsecond .picture img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.mainrightsecond .picture p{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 15px;
+    line-height: 1.5;
+    height: 45px;
+    width: 100px;
+    background: #FF0000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp:2;
+    display: none;
+    /*z-index: 99999;*/
+}
+.mainrightsecond .text2{
+    width: 220px;
+    height: 80px;
+    background: #fdfff8;
+}
+.text2 a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.text2 a img{
+    width: 74px;
+    height: 64px;
+}
+.text2 a p{
+    width: auto;
+    height: 100%;
+    color: #333333;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 10px;
+}
+.mainright .mainrightthird{
+    width: 216px;
+    height: 176px;
+    background: #fdfff8;
+    margin-top: 10px;
+    padding: 24px 22px;
+    border-radius: 5px;
+}
+.mainright .mainrightthird .baozhu{
+    width: 216px;
+    height: 176px;
+    overflow: hidden;
+}
+.mainright .mainrightthird a{
+    width: 216px;
+    height: 176px;
+    overflow: hidden;
+}
+.mainright .mainrightthird a img{
+    width: 100%;
+    height: 100%;
+}
+.mainright .mainrightthird a:hover img{
+    transform: scale(1.2,1.2);
+}
+.mainright .mainrightthird a img{
+    transition: transform .2s ease-in;
+}
+.mainright .guess{
+    width:230px ;
+    height: auto;
+    min-height: 300px;
+    background: #fdfff8;
+    /*float: right;*/
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.mainright .guess .title {
+    height: 21px;
+    line-height: 21px;
+    border-bottom: 1px solid #100b10;
+    color: #666666;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.guess .guesslist{
+    width: 220px;
+    height: 240px;
+    background: #fdfff8;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.guesslist li{
+    height: 38px;
+    background: #fdfff8;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 10px;
+    position: relative;
+}
+.guess .guesslist li a{
+    margin-left: 10px;
+}
+.guess .guesslist li::before{
+     content: '';
+     width: 5px;
+     height: 5px;
+     display: inline-block;
+     background: #100b10;
+     border-radius: 50%;
+     position: absolute;
+     top:10px;
+     overflow: hidden;
+ }
+.mainright .mainrightfifth{
+    width: 216px;
+    height: 176px;
+    background: #fdfff8;
+    margin-top: 10px;
+    padding: 24px 22px;
+    border-radius: 5px;
+
+}
+.mainright .mainrightfifth .baozhu2{
+    width: 216px;
+    height: 176px;
+    overflow: hidden;
+}
+.mainright .mainrightfifth a{
+    width: 216px;
+    height: 176px;
+    overflow: hidden;
+}
+.mainright .mainrightfifth a img{
+    width: 100%;
+    height: 100%;
+}
+.mainright .mainrightfifth a:hover img{
+    transform: scale(1.2,1.2);
+}
+.mainright .mainrightfifth a img{
+    transition: transform .2s ease-in;
+}
+.point{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background: #fdfff8;
+    margin-top: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.point.title {
+    height: 21px;
+    line-height: 21px;
+    border-bottom: 1px solid #100b10;
+    color: #666666;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    background: #333333;
+}
+.point .info{
+    width: 100%;
+    height: 460px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.point .info li{
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+.point .info .erweima{
+    width: 180px;
+    height: 180px;
+    margin: 10px auto;
+}

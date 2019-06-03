@@ -1,0 +1,224 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,input,textarea,select{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    /*background: rgba(221, 227, 214, 0.31);*/
+    background: #e9eaed;
+    font-family: 华文新魏，sans-serif;
+    /*在电脑中没有合适字体的时候时自动选择相似字体*/
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    color: #f8f8f8;
+    text-decoration: none;
+    /*去掉a标签中字体默认样式*/
+}
+.header{
+    /*width: 1350px;*/
+    /*height: 60px;*/
+    height: 50px;
+    width: 100%;
+    padding: 5px 0px ;
+    background: #1c2723;
+}
+.headerbox{
+    /*width: 80%;*/
+    /*height: 100%;*/
+    /*background: #99cc99;*/
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.headerbox h3{
+    /*width: 160px;*/
+    height: 100%;
+    float: left;
+    /*background: #ffe85f;*/
+    font-size: 22px;
+    margin-right: 60px;
+    color: #fff;
+    text-align: center; /*居中*/
+    line-height: 50px;
+    font-style: normal;
+}
+.headerbox .nav{
+    /*width: 600px;*/
+    /*去掉宽度，自适应*/
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    /*background: #f8f8f8;*/
+}
+.nav li{
+    /*导航栏中的8个标签*/
+    float: left;
+    margin-right:36px;
+}
+.nav li a:hover{
+    color: #00c1de;
+    /*导航栏里的选项当鼠标放上去会变色*/
+}
+.headerbox .search{
+    width: 50px;
+    height: 100%;
+    float: right;
+    /*background: #dca24f;*/
+}
+.passage{
+    padding: 30px;
+    box-sizing: border-box;
+    width: 1248px;
+    min-height:300px ;
+    background: #FFFFFF;
+    margin: 20px auto 10px;
+}
+.passage > ul{
+    margin-top:10px;
+}
+.title{
+    border-bottom: 1px solid #e4e3e3;
+    background: white;
+    padding : 10px 10px 10px 0;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: black;
+    transition-duration: 1s ;
+}
+.title:hover::before{
+    width: 80px;
+}
+.passage > li{
+    line-height: 1.5;
+}
+.passage span {
+    position: relative;
+    line-height: 32px;
+    padding-right: 40px;
+    color: #999;
+    font-size: 15px;
+}
+.passage span:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 40px;
+    background: #e0dfdf;
+    right: 18px;
+}
+.passage i{
+    position: relative;
+    font-size: 15px  ;
+    color: #333;
+    font-style: normal;
+}
+.passage i a{
+    font-size: 15px  ;
+    color: #333;
+}
+.passage i:before {
+    content: " ";
+    height: 10px;
+    width: 10px;
+    border: 2px solid #cccaca;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: -30.5px;
+    border-radius: 50%;
+}
+li i:hover::before{
+    background: black;
+}
+.page{
+    width: 100%;
+    height: 42px;
+    margin: 20px 0 40px;
+    text-align: center;
+}
+.page > a{
+    margin: 10px 10px;
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 10px;
+    background: #e9eaed;
+    color: #333333;
+}
+.page >a:hover{
+    color: #333333;
+    font-weight: bolder;
+}
+.bottom{
+    width:1350px ;
+    height: 188px;
+    background: #1c2723;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    color: #73777a;
+    border-top: 10px solid #00c1de;
+}
+.bottom .picture1{
+    height: 128px;
+    width: 106px;
+    /*background: #ffcf53;*/
+    margin-right: 20px;
+    margin-left: 54px;
+    display: flex;
+    flex-direction: column;
+    flex: none;
+}
+.picture1 img{
+    width: 100%;
+    height: 106px;
+}
+.picture1 p{
+    width: 100%;
+    height:22px ;
+    text-align: center;
+}
+.bottom .picture2{
+    height: 128px;
+    width: 106px;
+    /*background: #f3a6ff;*/
+    flex: none;
+    display: flex;
+    flex-direction: column;
+}
+.picture2 img{
+    width: 100%;
+    height: 106px;
+}
+.picture2 p{
+    width: 100%;
+    height:22px ;
+    text-align: center;
+}
+.bottom .wenben{
+    width: auto;
+    height: 128px;
+    min-width: 200px;
+    /*background: #99cc99;*/
+    margin-left: 30px;
+    font-size: 14px;
+}
+.wenben .announcement{
+    color: #00c1de;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
